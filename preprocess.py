@@ -28,4 +28,4 @@ for word, next in zip(corpus.words(), corpus.words()[1:]):
 with open(filename, "w") as file:
     file.write(json.dumps(allthewords))
 
-print(f"Successfully saved {i + 1} words to {filename}")
+print(f"Successfully saved {len(allthewords)} words to {filename}")
